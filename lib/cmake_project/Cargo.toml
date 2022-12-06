@@ -1,0 +1,14 @@
+[package]
+name = "cmake_project"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libc = "0.2.138"
+
+[build-dependencies]
+cmake = "0.1.49"
+bindgen = "0.63.0"
