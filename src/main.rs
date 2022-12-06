@@ -11,3 +11,13 @@ fn main() {
 
     }
 }
+
+#[cfg(test)]
+mod test{
+    #[test]
+    fn test_c_plus_func(){
+        unsafe{
+            assert_eq!(4, cmake_project::add(1, 3));
+        }
+    }
+}
