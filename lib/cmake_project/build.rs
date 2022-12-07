@@ -9,6 +9,7 @@ fn main(){
 
     // if no other static likbary
     println!("cargo:rustc-link-lib=static=cmake_project");
+    println!("cargo:rustc-link-lib=static=sample");
 
     // add this if it's c++ source code
     println!("cargo:rustc-link-lib=dylib=stdc++");

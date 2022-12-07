@@ -1,0 +1,33 @@
+{
+    "version": 4,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 23,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "pc",
+            "displayName": "pc",
+            "description": "Target pc system.",
+            "generator": "Ninja Multi-Config",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_MAKE_PROGRAM": {
+                    "type":"STRING",
+                    "value":"ninja"
+		},
+                "HARDWARE": {
+                    "type":"STRING",
+                    "value": "PC"
+                }
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "pc",
+            "configurePreset": "pc"
+        }
+    ]
+}
